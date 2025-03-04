@@ -18,7 +18,7 @@ def exchangeRate():
     print("Getting exchange rate")
     rate = exchageRates.get( request.json["fromCurrency"]+request.json["toCurrency"])
     print("Got Rate: ", rate)
-    return rate    
+    return str(rate)    
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

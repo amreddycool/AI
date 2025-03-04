@@ -3,4 +3,5 @@ flask_cors
 requests
 chainlit
 nest_asyncio
-llama-index
+llama_index
+llama-index-llms-ollama
