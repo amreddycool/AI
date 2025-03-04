@@ -1,0 +1,9 @@
+flask
+flask_cors
+requests
+chainlit
+nest_asyncio
+llama_index
+llama-index-llms-ollama
+llama-index-embeddings-huggingface
+numpy == 1.26.4
