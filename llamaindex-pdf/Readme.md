@@ -1,16 +1,9 @@
 # Description
 
-llama-index and llama3.2 with REST tool calling
+llama-index and llama3.2 with PDF read, ingest, index and search.
 
-# Tool data
-REST API provides exchange rate, using Flask
+Loading PDF document about Forex from : `https://en.wikipedia.org/wiki/Foreign_exchange_market` 
 
-Current mappings:
-``
- "GBPUSD": 1.1111
- "GBPEUR": 1.2222
- "GBPAUD": 1.3333
-``
 
 # Get llama3.2 locally
 Refer `https://ollama.com/`
@@ -23,22 +16,10 @@ Refer `https://ollama.com/`
 
 # Examples
 
-What is the exachange rate from GBP to EUR?
+What is forex
 
->> The current exchange rate from GBP to EUR is approximately 1 GBP = 1.2222 EUR.
+>> The foreign exchange market, commonly referred to as "Forex," is a global decentralized or over-the-counter (OTC) market for the trading of currencies. It is the largest market in the world, followed by the credit market.
 
-Can you convert 100 GBP into EUR
+how big is world wide forex market
 
->> 100 GBP is approximately equal to 122.22 EUR.
-
-Can you convert 122.22 EUR into GBP
-
->> 122.22 EUR is approximately equal to 100 GBP.
-
-Can you convert 100 EUR to AUD
-
->> 100 EUR is approximately equal to 147 AUD.
-   Which is wrong !! There is no mapping for this combination .. @todo how can this be done without extra mapping?
-
-
-
+>> The worldwide foreign exchange market has a daily turnover of over $7.5 trillion as of April 2022.
