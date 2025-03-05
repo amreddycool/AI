@@ -22,11 +22,11 @@ else:
     index.set_index_id("vector_index")
     index.storage_context.persist("./.store")
 
-query_engine = index.as_query_engine()
+query_engine = index.as_query_engine(response_mode='tree_summarize', use_async=True)
 
 @cl.on_chat_start
 async def on_chat_start():
-    await cl.Message(content = "Hello.. I am an Forex AI Agent..Ask me anything on Forex..").send()
+    await cl.Message(content = "Hello.. I am an Physics AI Agent..Ask me anything on Physics..").send()
 
 @cl.on_message
 async def on_message(message: cl.Message):
